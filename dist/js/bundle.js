@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a466df2a0df772bb880d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1eeee75a56151da44cf0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -9025,10 +9025,10 @@ module.exports = getEventCharCode;
 
 exports = module.exports = __webpack_require__(223)(undefined);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave);", ""]);
 
 // module
-exports.push([module.i, ".header {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: magenta;\n  height: 15vh; }\n", ""]);
+exports.push([module.i, ".header {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #c11c15;\n  color: #ecf5f4;\n  height: 15vh; }\n  .header h1 {\n    font-family: \"Sedgwick Ave\", cursive;\n    font-size: 3em;\n    letter-spacing: 3px; }\n", ""]);
 
 // exports
 

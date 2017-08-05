@@ -2,6 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: magenta;
+  background-color: $burroughs-red;
+  color: $burroughs-white;
   height: 15vh;
+
+  h1 {
+    font-family: $sedgwick;
+    font-size: 3em;
+    letter-spacing: 3px;
+  }
 }
