@@ -1,3 +1,4 @@
 .env
-node_modules
-dist/js
+/node_modules
+/dist/js
+/cutup_backend/lib
