@@ -53,7 +53,6 @@ class Scraper(object):
         site_text = urllib.urlopen(url).read()
         soup = BeautifulSoup(site_text, 'html5lib')
         titles = soup.find_all('h3')
-        print(titles)
         for title in titles:
             title_text = title.get_text().lower()
             clean_title = re.sub(r'[\t\n]', '', title_text)

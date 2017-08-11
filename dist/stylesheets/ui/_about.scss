@@ -1,0 +1,33 @@
+.about {
+  height: 100vh;
+  background-color: $burroughs-olive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+    padding-top: 2%;
+    color: $burroughs-white;
+    font-size: 3em;
+  }
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 1.75em;
+    }
+  }
+
+  button {
+    height: 3em;
+    width: 10em;
+    background-color: blue;
+    color: $burroughs-white;
+  }
+
+}

@@ -1,0 +1,17 @@
+.hero {
+  background: url($hero-url);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+
+  .hero__text {
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    color: $burroughs-white;
+    bottom: 10%;
+    right: 5%;
+    font-size: 1.5em;
+    width: 40%;
+  }
+}
