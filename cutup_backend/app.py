@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS, cross_origin
 import random
 import os
 import datetime
@@ -8,12 +9,14 @@ import textwrap
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+CORS(app)
 db = SQLAlchemy(app)
 
 from models import Result
 from services.scraper import Scraper
 
 @app.route("/tell-the-tale")
+@cross_origin()
 def tell_the_tale():
     date = str(datetime.date.today())
     collection = []
